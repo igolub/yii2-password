@@ -128,32 +128,32 @@ abstract class PasswordStrategy extends Validator
             [
                 self::MESSAGE_TOO_SHORT => PasswordStrategy::t(
                     'errors',
-                    "{attribute} is too short, minimum is {n} {n, plural, =1{character} other{characters}}.",
+                    "{attribute} is too short, minimum is {n, number} {n, plural, =1{character} other{characters}}.",
                     ['n' => $this->minLength]
                 ),
                 self::MESSAGE_TOO_LONG => PasswordStrategy::t(
                     'errors',
-                    "{attribute} is too long, maximum is {n} {n, plural, =1{character} other{characters}}.",
+                    "{attribute} is too long, maximum is {n, number} {n, plural, =1{character} other{characters}}.",
                     ['n' => $this->maxLength]
                 ),
                 self::MESSAGE_DIGITS => PasswordStrategy::t(
                     'errors',
-                    "{attribute} should contain at least {n} {n, plural, =1{digit} other{digits}}.",
+                    "{attribute} should contain at least {n, number} {n, plural, =1{digit} other{digits}}.",
                     ['n' => $this->minDigits]
                 ),
                 self::MESSAGE_UPPERCASE_LETTERS => PasswordStrategy::t(
                     'errors',
-                    "{attribute} should contain at least {n} upper case {n, plural, =1{character} other{characters}}.",
+                    "{attribute} should contain at least {n, number} upper case {n, plural, =1{character} other{characters}}.",
                     ['n' => $this->minUpperCaseLetters]
                 ),
                 self::MESSAGE_LOWERCASE_LETTERS => PasswordStrategy::t(
                     'errors',
-                    "{attribute} should contain at least {n} lower case {n, plural, =1{character} other{characters}}.",
+                    "{attribute} should contain at least {n, number} lower case {n, plural, =1{character} other{characters}}.",
                     ['n' => $this->minLowerCaseLetters]
                 ),
                 self::MESSAGE_SPECIAL_CHARACTERS => PasswordStrategy::t(
                     'errors',
-                    "{attribute} should contain at least {n} non alpha numeric {n, plural, =1{character} other{characters}}.",
+                    "{attribute} should contain at least {n, number} non alpha numeric {n, plural, =1{character} other{characters}}.",
                     ['n' => $this->minSpecialCharacters]
                 ),
             ],
